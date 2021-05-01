@@ -1,0 +1,283 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.7em;
+	background: #EEEEEE;
+}
+
+a {
+	text-decoration: none;
+	color: #fff
+}
+
+.containers {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+/*-------Navbar*/
+.topnav {
+	background: #131921;
+	color: #fff;
+	margin: 
+}
+
+.container {
+	margin: 0 2rem;
+}
+
+.topnav .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.location {
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+}
+
+
+.topnav .container input[type=text] {
+	padding: 6px;
+	font-size: 17px;
+	border: none;
+	width: 800px;
+	
+}
+
+
+.topnav .container .search-container button {
+	padding: 6px 10px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	float: right;
+}
+
+.topnav .container .account {
+	display: flex;
+	flex-direction: column;
+}
+
+.topnav .container .account a {
+	font-size: 14px;
+}
+
+/*showcase*/
+.showcase {
+	background: url('https://images.unsplash.com/photo-1518843875459-f738682238a6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmVnZXRhYmxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover;
+	height: 100vh;
+}
+
+.showcase .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.showcase .container .showcase-content {
+	color: #fff;
+	margin-top: 310px;
+	font-size: 3rem;
+	
+}
+
+/*products*/
+.products .containers {
+	background: #fff;
+	height: auto;
+	overflow: hidden;
+}
+
+.products-item {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	grid-gap: 1rem;
+}
+
+.items {
+	background: #fff;
+	box-shadow: 3px 3px 5px 6px #ccc;
+	height: 300px;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 
+}
+
+.items-content {
+	margin-left: 1rem;
+}
+
+.items-content img {
+	height: 100px;
+	width: 150px;
+}
+
+
+ .button {
+ 	width: 100%;
+ 	background: #E96125;
+ 	outline: none;
+ 	border: none;
+ 	bottom: 0;
+ 	color: #fff;
+ 	padding: 18px
+ }
+
+/*sick*/
+.slick .containers {
+	height: 30vh;
+	background: #fff;
+	position: relative;
+}
+
+.slick-item {
+	display: grid;
+	grid-template-columns: repeat(10, auto);
+	height: 100%;
+
+}
+.sitem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.sitem img{
+	width: 150px;
+	height: 100px;
+}
+
+.prev, .next {
+	color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 1rem;
+}
+
+/*category*/
+.category .containers{
+	background: #fff;
+	height: auto;
+	width: 100%;
+	
+}
+
+.category-item {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-gap: 1rem;
+}
+
+.item {
+	border: 1px solid #FFB6C1;
+	background: #FFFBFB;
+	height: 150px;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.category-content {
+	margin-right: 2rem;
+}
+
+
+.text-bright {
+	color: green;
+}
+
+
+/*slide show*/
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*offer*/
+
+.offer .containers {
+	display: flex;
+	margin-top: 4rem;
+}
+
+/*nroffer*/
+
+
+.nroffer .containers {
+	margin-top: 2rem;
+	overflow: hidden;
+	background: #fff;
+	height: auto;
+}
